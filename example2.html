@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Grid Layout Crash Course</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <style type="text/css">
+    	.wrapper {
+    		display: grid;
+    		/*grid-template-columns: 1fr 1fr 1fr;*/
+    		grid-template-columns: repeat(3, 1fr);
+    		grid-gap: 1em;
+    	}
+    	.wrapper > div {
+    		background: #eee;
+    		padding: 1em;
+    	}
+    	.wrapper > div:nth-child(odd) {
+    		background: #ddd;
+    	}
+    </style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div>ipsum dolor sit amet.</div>
+		<div>ipsum dolor sit amet.</div>
+		<div>ipsum dolor sit amet.</div>
+		<div>ipsum dolor sit amet.</div>
+		<div>ipsum dolor sit amet.</div>
+		<div>ipsum dolor sit amet.</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
